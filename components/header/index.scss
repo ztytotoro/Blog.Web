@@ -19,5 +19,10 @@ $prefix: header;
     width: 40px;
     box-shadow: $ms-depth-shadow-16;
     background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 22px;
   }
 }

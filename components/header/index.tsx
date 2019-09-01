@@ -5,7 +5,9 @@ export const Header: React.FC = () => {
   return (
     <div className={css.header}>
       <span className={css.headerTitle}>catlien.com</span>
-      <div className={css.headerAvator}></div>
+      <div className={css.headerAvator}>
+        <span>Y</span>
+      </div>
     </div>
   );
 };
