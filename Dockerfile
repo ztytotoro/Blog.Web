@@ -3,6 +3,7 @@ ENV NODE_ENV production
 WORKDIR /usr/src/app
 COPY ["package.json", "./"]
 COPY ["package-lock.json*", "./"]
+RUN apk add --no-cache python gcc g++ make
 RUN npm install --production=false
 COPY . .
 RUN npm run build
