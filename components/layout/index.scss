@@ -8,5 +8,8 @@ $prefix: layout;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 900px) {
+    padding: 0 300px;
+  }
   padding: 0 20px;
 }
