@@ -1,5 +1,18 @@
 $prefix: footer;
 
 .#{$prefix} {
-  height: 100px;
+  height: 30px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.168s;
+  &:hover {
+    color: rgb(31, 120, 221);
+  }
 }

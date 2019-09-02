@@ -17,6 +17,10 @@ export const Layout: React.FC<Props> = ({ children, title }) => {
         <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Chilanka|Livvic|Manjari|Montserrat|Open+Sans|Raleway|Source+Sans+Pro&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Header />
       <Body>{children}</Body>
