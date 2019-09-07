@@ -1,7 +1,8 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
+import { Icon } from 'office-ui-fabric-react/lib-commonjs/Icon';
 
-const css = require("./index.scss");
+const css = require('./index.scss');
 
 export const Header: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ export const Header: React.FC = () => {
         </Link>
       </span>
       <div className={css.headerAvator}>
-        <span>Y</span>
+        <Icon iconName="PartlyCloudyNight"></Icon>
       </div>
     </div>
   );

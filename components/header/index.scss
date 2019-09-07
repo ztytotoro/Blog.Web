@@ -16,15 +16,15 @@ $prefix: header;
   }
 
   &Avator {
-    border-radius: 50%;
     height: 40px;
     width: 40px;
-    box-shadow: $ms-depth-shadow-4;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 500;
     font-size: 22px;
-    border: 1px solid #e2e2e2;
+    // border-radius: 50%;
+    // border: 1px solid #e2e2e2;
+    // box-shadow: $ms-depth-shadow-4;
   }
 }
