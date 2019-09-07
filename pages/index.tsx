@@ -1,10 +1,11 @@
-import React from "react";
-import { Layout } from "../components/layout";
-import { Icon } from "office-ui-fabric-react/lib-commonjs/Icon";
+import React from 'react';
+import { Layout } from '../components/layout';
+import { Icon } from 'office-ui-fabric-react/lib-commonjs/Icon';
+import { NextPage } from 'next';
 
-const css = require("./index.scss");
+const css = require('./index.scss');
 
-const Home: React.FC = () => {
+const Home: NextPage = () => {
   return (
     <Layout title="Home">
       <div className={css.body}>
