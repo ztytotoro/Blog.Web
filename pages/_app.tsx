@@ -1,10 +1,12 @@
-import React from 'react'
-import App from 'next/app'
+import React from 'react';
+import App from 'next/app';
 import { initializeIcons } from '@uifabric/icons';
 
-initializeIcons();
+initializeIcons(undefined, {
+  disableWarnings: true
+});
 
-class Blog extends App {
+class BlogApp extends App {
   // Only uncomment this method if you have blocking data requirements for
   // every single page in your application. This disables the ability to
   // perform automatic static optimization, causing every page in your app to
@@ -18,9 +20,9 @@ class Blog extends App {
   // }
 
   render() {
-    const { Component, pageProps } = this.props
-    return <Component {...pageProps} />
+    const { Component, pageProps } = this.props;
+    return <Component {...pageProps} />;
   }
 }
 
-export default Blog
+export default BlogApp;
