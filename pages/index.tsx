@@ -1,11 +1,13 @@
 import React from 'react';
 import { Layout } from '../components/layout';
-import { Icon } from 'office-ui-fabric-react/lib-commonjs/Icon';
+import { Icon } from 'office-ui-fabric-react';
 import { NextPage } from 'next';
+import { Modal } from 'office-ui-fabric-react';
 
 const css = require('./index.scss');
 
 const Home: NextPage = () => {
+  let showVisitor = true;
   return (
     <Layout title="Home">
       <div className={css.body}>
@@ -14,6 +16,8 @@ const Home: NextPage = () => {
           <Icon iconName="GiftboxOpen"></Icon>
         </h1>
       </div>
+
+      {/* <Modal isOpen={showVisitor}>1231311</Modal> */}
     </Layout>
   );
 };

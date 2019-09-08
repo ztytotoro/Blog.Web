@@ -2,7 +2,7 @@
   @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
 
   html {
-    font-family: "Fira Code", monospace;
+    font-family: 'Fira Code', monospace;
     color: #6f6f6f;
   }
 }
@@ -12,4 +12,14 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+.modalContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  min-width: 450px;
+  height: 300px;
+  font-size: 16px;
 }
