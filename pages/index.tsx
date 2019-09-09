@@ -1,8 +1,7 @@
 import React from 'react';
 import { Layout } from '../components/layout';
-import { Icon } from 'office-ui-fabric-react';
+import { Icon, Modal } from 'office-ui-fabric-react';
 import { NextPage } from 'next';
-import { Modal } from 'office-ui-fabric-react';
 
 const css = require('./index.scss');
 
@@ -17,7 +16,7 @@ const Home: NextPage = () => {
         </h1>
       </div>
 
-      {/* <Modal isOpen={showVisitor}>1231311</Modal> */}
+      <Modal isOpen={showVisitor}>1231311</Modal>
     </Layout>
   );
 };

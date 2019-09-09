@@ -5,15 +5,6 @@ import { Header } from '../header';
 import { Footer } from '../footer';
 import Head from 'next/head';
 import { Body } from '../body';
-import { configureLoadStyles } from '@microsoft/load-themed-styles';
-
-// Store registered styles in a variable used later for injection.
-let _allStyles = '';
-
-// Push styles into variables for injecting later.
-configureLoadStyles((styles: string) => {
-  _allStyles += styles;
-});
 
 interface Props {
   title: string;
@@ -30,7 +21,6 @@ export const Layout: React.FC<Props> = ({ children, title }) => {
           href="https://fonts.googleapis.com/css?family=Chilanka|Livvic|Manjari|Montserrat|Open+Sans|Raleway|Source+Sans+Pro&display=swap"
           rel="stylesheet"
         ></link>
-        <style>${_allStyles}</style>
       </Head>
       <Header />
       <Body>{children}</Body>
