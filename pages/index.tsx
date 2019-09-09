@@ -2,12 +2,11 @@ import React from 'react';
 import { Layout } from '../components/layout';
 import { Icon } from 'office-ui-fabric-react';
 import { NextPage } from 'next';
-import { VisitorInfo } from '../components/visitor';
+import { VisitorInfo } from '../components/visitor-info';
 
 const css = require('./index.scss');
 
 const Home: NextPage = () => {
-  let showVisitor = false;
   return (
     <Layout title="Home">
       <div className={css.body}>
@@ -15,7 +14,7 @@ const Home: NextPage = () => {
         <h1>
           <Icon iconName="GiftboxOpen"></Icon>
         </h1>
-        <VisitorInfo show={showVisitor}>12313123</VisitorInfo>
+        <VisitorInfo />
       </div>
     </Layout>
   );
