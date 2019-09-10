@@ -1,5 +1,5 @@
 import { Modal } from 'office-ui-fabric-react';
-import { NoSSR, noSSR } from '../client-rendered';
+import { noSSR } from 'react-csr';
 import { useState } from 'react';
 const css = require('./index.scss');
 
