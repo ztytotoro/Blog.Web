@@ -1,5 +1,5 @@
 import { Modal } from 'office-ui-fabric-react';
-import { OffSSR, offSSR } from '../client-rendered';
+import { NoSSR, noSSR } from '../client-rendered';
 import { useState } from 'react';
 const css = require('./index.scss');
 
@@ -15,7 +15,7 @@ const InnerComponent: React.FC = () => {
   );
 };
 
-export const VisitorInfo = offSSR(() => {
+export const VisitorInfo = noSSR(() => {
   return <InnerComponent />;
 });
 
