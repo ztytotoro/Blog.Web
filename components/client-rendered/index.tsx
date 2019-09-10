@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import React from 'react';
 
 export const NoSSR: React.FC = ({ children }) => {
   const [isClient, setIsClient] = useState(false);
@@ -9,7 +10,7 @@ export const NoSSR: React.FC = ({ children }) => {
 };
 
 export function noSSR<P extends {}>(
-  Any: React.FC<P> | (new () => React.Component<P>)
+  Any: React.FC<P> | (typeof React.Component)
 ): React.FC<P> {
   return props => (
     <NoSSR>
