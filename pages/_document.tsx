@@ -8,7 +8,7 @@ configureLoadStyles((styles: string) => {
   _allStyles += styles;
 });
 
-export default class MyDocument extends Document {
+export default class BlogDocument extends Document {
   static async getInitialProps(ctx) {
     const originalRenderPage = ctx.renderPage;
 
