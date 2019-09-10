@@ -1,10 +1,12 @@
 import { Modal } from 'office-ui-fabric-react';
+import { OffSSR, offSSR } from '../client-rendered';
+import { useState } from 'react';
 const css = require('./index.scss');
 
-export const VisitorInfo: React.FC = () => {
-  let show = true;
+const InnerComponent: React.FC = () => {
+  const [show, updateShow] = useState(true);
   if (getVisitorInfo()) {
-    show = false;
+    updateShow(false);
   }
   return (
     <Modal isOpen={show}>
@@ -12,6 +14,10 @@ export const VisitorInfo: React.FC = () => {
     </Modal>
   );
 };
+
+export const VisitorInfo = offSSR(() => {
+  return <InnerComponent />;
+});
 
 function getVisitorInfo() {
   return JSON.parse(localStorage.getItem('whoru'));
