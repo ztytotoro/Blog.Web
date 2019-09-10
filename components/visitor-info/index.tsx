@@ -3,7 +3,7 @@ import { noSSR } from 'react-csr';
 import { useState } from 'react';
 const css = require('./index.scss');
 
-const InnerComponent: React.FC = () => {
+export const VisitorInfo = noSSR(() => {
   const [show, updateShow] = useState(true);
   if (getVisitorInfo()) {
     updateShow(false);
@@ -13,10 +13,6 @@ const InnerComponent: React.FC = () => {
       <div className={css.container}>1231</div>
     </Modal>
   );
-};
-
-export const VisitorInfo = noSSR(() => {
-  return <InnerComponent />;
 });
 
 function getVisitorInfo() {
