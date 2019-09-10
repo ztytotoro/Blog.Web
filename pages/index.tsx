@@ -3,6 +3,7 @@ import { Layout } from '../components/layout';
 import { Icon } from 'office-ui-fabric-react';
 import { NextPage } from 'next';
 import { VisitorInfo } from '../components/visitor-info';
+import { ClientRendered } from '../components/client-rendered';
 
 const css = require('./index.scss');
 
@@ -14,7 +15,9 @@ const Home: NextPage = () => {
         <h1>
           <Icon iconName="GiftboxOpen"></Icon>
         </h1>
-        <VisitorInfo />
+        <ClientRendered>
+          <VisitorInfo />
+        </ClientRendered>
       </div>
     </Layout>
   );
