@@ -8,7 +8,9 @@ export const NoSSR: React.FC = ({ children }) => {
   return isClient ? <>{children}</> : <></>;
 };
 
-export function noSSR<P extends {}>(Any: React.FC<P>): React.FC<P> {
+export function noSSR<P extends {}>(
+  Any: React.FC<P> | (new () => React.Component<P>)
+): React.FC<P> {
   return props => (
     <NoSSR>
       <Any {...props} />
