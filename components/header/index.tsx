@@ -2,7 +2,6 @@ import React, { createRef, useState } from 'react';
 import Link from 'next/link';
 import { Icon } from 'office-ui-fabric-react/lib-commonjs/Icon';
 import { VisitorInfoCard } from '../visitor-info-card';
-
 import css from './index.scss';
 
 export const Header: React.FC = () => {

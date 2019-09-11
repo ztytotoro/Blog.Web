@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
       >
         ztytotoro
       </a>{' '}
-      © 2019 | Powered by{' '}
+      © {new Date().getFullYear()} | Powered by{' '}
       <a
         href="https://dotnet.microsoft.com/"
         target="_blank"
