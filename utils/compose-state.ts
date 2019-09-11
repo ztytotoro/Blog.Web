@@ -1,6 +1,5 @@
 import { Dispatch, useState } from 'react';
-
-export type Dictionary = { [key: string]: unknown };
+import { Dictionary } from './types';
 
 export type ComposedState<T extends Dictionary> = {
   [P in keyof T]: {
