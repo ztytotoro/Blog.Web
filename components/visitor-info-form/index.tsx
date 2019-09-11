@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Modal,
   TextField,
@@ -5,8 +6,13 @@ import {
   PrimaryButton
 } from 'office-ui-fabric-react';
 import { noSSR } from 'react-csr';
-import { useState, Dispatch, useEffect } from 'react';
-const css = require('./index.scss');
+import { useState, useEffect } from 'react';
+import css from './index.scss';
+import { composedState, deComposedState, validateEmail } from '../../utils';
+
+function getVisitorInfo() {
+  return JSON.parse(localStorage.getItem('whoru'));
+}
 
 export const VisitorInfoForm = noSSR(() => {
   const [show, updateShow] = useState(true);
@@ -72,44 +78,3 @@ export const VisitorInfoForm = noSSR(() => {
     </Modal>
   );
 });
-
-function getVisitorInfo() {
-  return JSON.parse(localStorage.getItem('whoru'));
-}
-
-function validateEmail(value: string) {
-  return /[0-9a-zA-Z_-]+@[0-9a-zA-Z_-]+\.(com|cn|net|org)/.test(value)
-    ? ''
-    : 'Incorrect email format';
-}
-
-type ComposedState<T> = {
-  [P in keyof T]: {
-    value: T[P];
-    update: Dispatch<T[P]>;
-  };
-};
-
-function composedState<T extends { [key: string]: any }>(
-  any: T
-): ComposedState<T> {
-  let result = {} as any;
-  Object.keys(any).forEach(key => {
-    const [value, update] = useState(any[key]);
-    result[key] = {
-      value,
-      update
-    };
-  });
-  return result;
-}
-
-function deComposedState<T extends ComposedState<any>>(
-  any: T
-): T extends ComposedState<infer P> ? P : any {
-  let result = {} as any;
-  Object.keys(any).forEach(key => {
-    result[key] = any[key].value;
-  });
-  return result;
-}

@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { Icon } from 'office-ui-fabric-react/lib-commonjs/Icon';
 import { VisitorInfoCard } from '../visitor-info-card';
 
-const css = require('./index.scss');
+import css from './index.scss';
 
 export const Header: React.FC = () => {
-  let icon = createRef<HTMLElement>();
+  const icon = createRef<HTMLElement>();
   const [hideCard, toggleCard] = useState(true);
   return (
     <div className={css.header}>

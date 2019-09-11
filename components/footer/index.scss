@@ -1,11 +1,11 @@
-@import "../../styles/link.scss";
+@import '../../styles/link.scss';
 
 $prefix: footer;
 
 .#{$prefix} {
   height: 30px;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   line-height: 30px;
 }

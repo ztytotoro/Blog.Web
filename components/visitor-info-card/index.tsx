@@ -1,3 +1,4 @@
+import React from 'react';
 import { Callout, DirectionalHint, Target } from 'office-ui-fabric-react';
 
 interface Props {

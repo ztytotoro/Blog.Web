@@ -3,8 +3,7 @@ import { Layout } from '../components/layout';
 import { Icon } from 'office-ui-fabric-react';
 import { NextPage } from 'next';
 import { VisitorInfoForm } from '../components/visitor-info-form';
-
-const css = require('./index.scss');
+import css from './index.scss';
 
 const Home: NextPage = () => {
   return (
