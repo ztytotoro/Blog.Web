@@ -1,16 +1,16 @@
-import React from 'react';
-import App from 'next/app';
-import { initializeIcons } from '@uifabric/icons';
+import React from 'react'
+import App from 'next/app'
+import { initializeIcons } from '@uifabric/icons'
 
 initializeIcons(undefined, {
-  disableWarnings: true
-});
+    disableWarnings: true,
+})
 
 class BlogApp extends App {
-  render() {
-    const { Component, pageProps } = this.props;
-    return <Component {...pageProps} />;
-  }
+    render() {
+        const { Component, pageProps } = this.props
+        return <Component {...pageProps} />
+    }
 }
 
-export default BlogApp;
+export default BlogApp

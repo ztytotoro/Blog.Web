@@ -1,32 +1,35 @@
 {
-  "name": "blog-web",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint . --ext .ts,.tsx"
-  },
-  "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
-    "next": "^9.0.5",
-    "node-sass": "^4.12.0",
-    "office-ui-fabric-react": "^7.31.2",
-    "react": "^16.9.0",
-    "react-csr": "^0.1.0",
-    "react-dom": "^16.9.0"
-  },
-  "devDependencies": {
-    "@types/node": "^12.7.4",
-    "@types/react": "^16.9.2",
-    "@typescript-eslint/eslint-plugin": "^2.2.0",
-    "@typescript-eslint/parser": "^2.2.0",
-    "@typescript-eslint/typescript-estree": "^2.2.0",
-    "eslint": "^6.3.0",
-    "eslint-config-prettier": "^6.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-react": "^7.14.3",
-    "typescript": "^3.6.2"
-  }
+    "name": "blog-web",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "pretty": "prettier --write **/*.ts **/*.tsx **/*.scss !**/*.d.ts",
+        "eslint": "eslint --fix . --ext .ts,.tsx",
+        "lint": "npm run pretty && npm run eslint"
+    },
+    "dependencies": {
+        "@zeit/next-sass": "^1.0.1",
+        "next": "^9.0.5",
+        "node-sass": "^4.12.0",
+        "office-ui-fabric-react": "^7.31.2",
+        "react": "^16.9.0",
+        "react-csr": "^0.1.0",
+        "react-dom": "^16.9.0"
+    },
+    "devDependencies": {
+        "@types/node": "^12.7.4",
+        "@types/react": "^16.9.2",
+        "@typescript-eslint/eslint-plugin": "^2.2.0",
+        "@typescript-eslint/parser": "^2.2.0",
+        "@typescript-eslint/typescript-estree": "^2.2.0",
+        "eslint": "^6.3.0",
+        "eslint-config-prettier": "^6.2.0",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-react": "^7.14.3",
+        "prettier": "1.18.2",
+        "typescript": "^3.6.2"
+    }
 }

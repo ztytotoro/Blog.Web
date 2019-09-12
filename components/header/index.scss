@@ -4,27 +4,27 @@
 $prefix: header;
 
 .#{$prefix} {
-  display: flex;
-  height: 50px;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
-
-  &Title {
-    font-weight: 500;
-    font-size: 22px;
-  }
-
-  &Avator {
-    height: 40px;
-    width: 40px;
     display: flex;
+    height: 50px;
     align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    font-size: 22px;
-    // border-radius: 50%;
-    // border: 1px solid #e2e2e2;
-    // box-shadow: $ms-depth-shadow-4;
-  }
+    justify-content: space-between;
+    margin-top: 20px;
+
+    &Title {
+        font-weight: 500;
+        font-size: 22px;
+    }
+
+    &Avator {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 22px;
+        // border-radius: 50%;
+        // border: 1px solid #e2e2e2;
+        // box-shadow: $ms-depth-shadow-4;
+    }
 }
