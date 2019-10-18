@@ -1,5 +1,5 @@
 $prefix: body;
 
 .#{$prefix} {
-    flex: 1;
+    grid-area: body;
 }

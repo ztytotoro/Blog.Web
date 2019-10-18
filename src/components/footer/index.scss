@@ -3,7 +3,7 @@
 $prefix: footer;
 
 .#{$prefix} {
-    height: 30px;
+    grid-area: footer;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;

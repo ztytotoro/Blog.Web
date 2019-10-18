@@ -2,9 +2,7 @@ import React from 'react'
 import App from 'next/app'
 import { initializeIcons } from '@uifabric/icons'
 
-initializeIcons(undefined, {
-    disableWarnings: true,
-})
+initializeIcons()
 
 class BlogApp extends App {
     render() {
