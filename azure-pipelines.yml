@@ -10,10 +10,9 @@ pool:
   vmImage: 'Ubuntu-latest'
 
 steps:
-- task: Docker@2
-  displayName: Build
+- task: DockerCompose@0
   inputs:
-    repository: $(imageName)
-    command: build
-    Dockerfile: ./Dockerfile
+    containerregistrytype: 'Container Registry'
+    dockerComposeFile: '**/docker-compose.yml'
+    dockerComposeCommand: 'build'
 

@@ -1,10 +1,10 @@
-FROM node:10.13-alpine
+FROM node:12
 ENV NODE_ENV production
 WORKDIR /usr/src/app
 COPY ["package.json", "./"]
 COPY ["package-lock.json*", "./"]
-RUN apk update
-RUN apk add --no-cache python gcc g++ make
+RUN apt-get update
+RUN apt-get install python gcc g++ make
 RUN npm install --production=false
 COPY . .
 RUN npm run build
