@@ -1,8 +1,33 @@
 :global {
     @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
 
+    @font-face {
+        font-family: 'Cascadia Code';
+        src: url('/static/fonts/CascadiaCode/CascadiaPL.ttf') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'JetBrains Mono';
+        src: url('/static/fonts/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf')
+                format('truetype'),
+            url('/static/fonts/JetBrainsMono/ttf/JetBrainsMono-Medium.ttf')
+                format('truetype'),
+            url('/static/fonts/JetBrainsMono/ttf/JetBrainsMono-Medium-Italic.ttf')
+                format('truetype'),
+            url('/static/fonts/JetBrainsMono/ttf/JetBrainsMono-Italic.ttf')
+                format('truetype'),
+            url('/static/fonts/JetBrainsMono/ttf/JetBrainsMono-Bold.ttf')
+                format('truetype'),
+            url('/static/fonts/JetBrainsMono/ttf/JetBrainsMono-Bold-Italic.ttf')
+                format('truetype'),
+            url('/static/fonts/JetBrainsMono/ttf/JetBrainsMono-ExtraBold.ttf')
+                format('truetype'),
+            url('/static/fonts/JetBrainsMono/ttf/JetBrainsMono-ExtraBold-Italic.ttf')
+                format('truetype');
+    }
+
     html {
-        font-family: 'Fira Code', monospace;
+        font-family: 'Cascadia Code', 'JetBrains Mono', 'Fira Code', monospace;
         color: #6f6f6f;
     }
 }
