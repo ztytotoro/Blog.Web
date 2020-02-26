@@ -1,0 +1,21 @@
+@import '../../styles/link.scss';
+
+$prefix: footer;
+
+.#{$prefix} {
+    grid-area: footer;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.beian {
+    grid-area: beian;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+    background-color: #464646;
+    color: #c7c7c7;
+}

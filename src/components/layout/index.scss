@@ -1,0 +1,17 @@
+$prefix: layout;
+
+:global(body) {
+    margin: 0;
+}
+
+.#{$prefix} {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        'header'
+        'body'
+        'footer'
+        'beian';
+    grid-template-rows: 70px 1fr 30px 30px;
+    grid-template-columns: 1fr;
+}
