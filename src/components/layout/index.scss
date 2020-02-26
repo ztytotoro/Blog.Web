@@ -10,7 +10,8 @@ $prefix: layout;
     grid-template-areas:
         'header'
         'body'
-        'footer';
-    grid-template-rows: 70px 1fr 30px;
+        'footer'
+        'beian';
+    grid-template-rows: 70px 1fr 30px 30px;
     grid-template-columns: 1fr;
 }
