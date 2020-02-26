@@ -13,7 +13,7 @@ const Home: NextPage = () => {
                 <h1>
                     <Icon iconName="GiftboxOpen"></Icon>
                 </h1>
-                <VisitorInfoForm />
+                {/* <VisitorInfoForm /> */}
             </div>
         </Layout>
     )
