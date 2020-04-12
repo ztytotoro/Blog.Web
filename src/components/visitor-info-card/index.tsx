@@ -1,5 +1,5 @@
 import React from 'react'
-import { Callout, DirectionalHint, Target } from 'office-ui-fabric-react'
+import { Callout, DirectionalHint, Target } from '@fluentui/react'
 
 interface Props {
     target: Target
