@@ -2,7 +2,6 @@ import React from 'react'
 import { Layout } from '../components/layout'
 import { Icon } from '@fluentui/react'
 import { NextPage } from 'next'
-import { VisitorInfoForm } from '../components/visitor-info-form'
 import css from './index.scss'
 
 const Home: NextPage = () => {
@@ -13,7 +12,6 @@ const Home: NextPage = () => {
                 <h1>
                     <Icon iconName="GiftboxOpen"></Icon>
                 </h1>
-                {/* <VisitorInfoForm /> */}
             </div>
         </Layout>
     )

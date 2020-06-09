@@ -14,8 +14,6 @@ export const VisitorInfoCard: React.FC<Props> = ({ target, hidden }) => {
             isBeakVisible={false}
             directionalHint={DirectionalHint.bottomRightEdge}
             hidden={hidden}
-        >
-            123
-        </Callout>
+        ></Callout>
     )
 }
