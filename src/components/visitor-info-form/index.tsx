@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-    Modal,
-    TextField,
-    ChoiceGroup,
-    PrimaryButton,
-} from 'office-ui-fabric-react'
+import { Modal, TextField, ChoiceGroup, PrimaryButton } from '@fluentui/react'
 import { noSSR } from 'react-csr'
 import { useState, useEffect } from 'react'
 import css from './index.scss'

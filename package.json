@@ -1,40 +1,42 @@
 {
-  "name": "blog-web",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "pretty": "prettier --write **/*.ts **/*.tsx **/*.scss **/*.json !**/*.d.ts",
-    "eslint": "eslint --fix . --ext .ts,.tsx",
-    "lint": "npm run pretty && npm run eslint",
-    "test": "jest"
-  },
-  "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
-    "next": "^9.2.2",
-    "node-sass": "^4.13.1",
-    "office-ui-fabric-react": "^7.98.1",
-    "react": "^16.13.0",
-    "react-csr": "^0.1.0",
-    "react-dom": "^16.13.0"
-  },
-  "devDependencies": {
-    "@types/jest": "^24.9.1",
-    "@types/node": "^12.12.29",
-    "@types/react": "^16.9.23",
-    "@types/react-dom": "^16.9.5",
-    "@typescript-eslint/eslint-plugin": "^2.21.0",
-    "@typescript-eslint/parser": "^2.21.0",
-    "@typescript-eslint/typescript-estree": "^2.21.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-react": "^7.18.3",
-    "jest": "^24.9.0",
-    "prettier": "^1.19.1",
-    "ts-jest": "^24.3.0",
-    "typescript": "^3.8.3"
-  }
+    "name": "blog-web",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "build:static": "next build && next export",
+        "start": "next start",
+        "pretty": "prettier --write **/*.ts **/*.tsx **/*.scss **/*.json !**/*.d.ts",
+        "eslint": "eslint --fix . --ext .ts,.tsx",
+        "lint": "npm run pretty && npm run eslint",
+        "test": "jest"
+    },
+    "dependencies": {
+        "@fluentui/react": "^7.118.0",
+        "@zeit/next-sass": "^1.0.1",
+        "next": "^9.4.4",
+        "node-sass": "^4.14.1",
+        "office-ui-fabric-core": "^11.0.0",
+        "react": "^16.13.1",
+        "react-csr": "^0.1.0",
+        "react-dom": "^16.13.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.9.1",
+        "@types/node": "^12.12.45",
+        "@types/react": "^16.9.35",
+        "@types/react-dom": "^16.9.8",
+        "@typescript-eslint/eslint-plugin": "^2.34.0",
+        "@typescript-eslint/parser": "^2.34.0",
+        "@typescript-eslint/typescript-estree": "^2.34.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.21.1",
+        "eslint-plugin-react": "^7.20.0",
+        "jest": "^24.9.0",
+        "prettier": "^1.19.1",
+        "ts-jest": "^24.3.0",
+        "typescript": "^3.9.5"
+    }
 }

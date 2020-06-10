@@ -1,6 +1,6 @@
 import React from 'react'
 import App from 'next/app'
-import { initializeIcons } from '@uifabric/icons'
+import { initializeIcons } from '@fluentui/react'
 
 initializeIcons()
 

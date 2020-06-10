@@ -1,5 +1,5 @@
 import React from 'react'
-import { Callout, DirectionalHint, Target } from 'office-ui-fabric-react'
+import { Callout, DirectionalHint, Target } from '@fluentui/react'
 
 interface Props {
     target: Target
@@ -14,8 +14,6 @@ export const VisitorInfoCard: React.FC<Props> = ({ target, hidden }) => {
             isBeakVisible={false}
             directionalHint={DirectionalHint.bottomRightEdge}
             hidden={hidden}
-        >
-            123
-        </Callout>
+        ></Callout>
     )
 }
