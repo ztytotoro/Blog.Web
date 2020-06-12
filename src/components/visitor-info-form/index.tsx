@@ -2,7 +2,7 @@ import React from 'react'
 import { Modal, TextField, ChoiceGroup, PrimaryButton } from '@fluentui/react'
 import { noSSR } from 'react-csr'
 import { useState, useEffect } from 'react'
-import css from './index.scss'
+import css from './index.module.scss'
 import { composedState, deComposedState, validateEmail } from '../../utils'
 
 function getVisitorInfo() {

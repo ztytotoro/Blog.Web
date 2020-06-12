@@ -1,0 +1,16 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.modalContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 450px;
+    height: 300px;
+    font-size: 16px;
+}

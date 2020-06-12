@@ -2,7 +2,7 @@ import React from 'react'
 import { Layout } from '../components/layout'
 import { Icon } from '@fluentui/react'
 import { NextPage } from 'next'
-import css from './index.scss'
+import css from './index.module.scss'
 
 const Home: NextPage = () => {
     return (

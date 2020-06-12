@@ -2,7 +2,7 @@ import React, { createRef, useState } from 'react'
 import Link from 'next/link'
 import { Icon } from '@fluentui/react'
 import { VisitorInfoCard } from '../visitor-info-card'
-import css from './index.scss'
+import css from './index.module.scss'
 
 export const Header: React.FC = () => {
     const icon = createRef<HTMLElement>()

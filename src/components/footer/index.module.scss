@@ -1,5 +1,3 @@
-@import '../../styles/link.scss';
-
 $prefix: footer;
 
 .#{$prefix} {
@@ -13,7 +11,7 @@ $prefix: footer;
 .beian {
     grid-area: beian;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif, 'Microsoft Yahei';
     font-weight: bold;
     line-height: 30px;
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import App from 'next/app'
 import { initializeIcons } from '@fluentui/react'
+import '../styles/global.scss'
+import 'office-ui-fabric-core/dist/css/Fabric.css'
 
 initializeIcons()
 

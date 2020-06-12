@@ -14,13 +14,12 @@
     },
     "dependencies": {
         "@fluentui/react": "^7.118.0",
-        "@zeit/next-sass": "^1.0.1",
         "next": "^9.4.4",
-        "node-sass": "^4.14.1",
         "office-ui-fabric-core": "^11.0.0",
         "react": "^16.13.1",
         "react-csr": "^0.1.0",
-        "react-dom": "^16.13.1"
+        "react-dom": "^16.13.1",
+        "sass": "^1.26.8"
     },
     "devDependencies": {
         "@types/jest": "^24.9.1",

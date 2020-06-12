@@ -1,9 +1,5 @@
 $prefix: layout;
 
-:global(body) {
-    margin: 0;
-}
-
 .#{$prefix} {
     height: 100vh;
     display: grid;
