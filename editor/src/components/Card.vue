@@ -1,5 +1,7 @@
 <template>
-  <div>{{a}}</div>
+    <div class="shadow p-2">
+        <slot></slot>
+    </div>
 </template>
 
 <script lang="ts" setup>
