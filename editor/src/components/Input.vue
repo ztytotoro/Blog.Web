@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts" setup>
-import { defineEmit, defineProps, ref, toRaw, watch } from "@vue/runtime-core";
+import { defineEmit, defineProps, ref, watch } from "vue";
 
 const props = defineProps({
   modelValue: String,

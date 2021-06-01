@@ -12,7 +12,7 @@
       <Label>标签</Label>
       <Input v-model="form.tags" />
     </div>
-    <Monaco class="h-96 w-full border py-3"></Monaco>
+    <Monaco class="h-96 w-full border py-3" v-model="form.content"></Monaco>
     <Button @click="submit">保存</Button>
   </Card>
 </template>
@@ -23,12 +23,15 @@ import Input from "@/components/Input.vue";
 import Label from "@/components/Label.vue";
 import Button from "@/components/Button.vue";
 import Monaco from "@/components/Monaco.vue";
-import { reactive, toRaw } from "@vue/reactivity";
+import { reactive, toRaw } from "vue";
 
-const form = reactive({
-  name: "111",
+const form = reactive<Post>({
+  name: "",
   title: "",
-  tags: "",
+  author: "",
+  tags: [],
+  lastUpdate: "",
+  content: "",
 });
 
 const submit = () => {
