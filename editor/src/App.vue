@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen w-screen bg-gray-100">
+    <div class="h-screen w-screen bg-gray-100 p-5 flex items-center justify-center">
         <router-view></router-view>
     </div>
 </template>
