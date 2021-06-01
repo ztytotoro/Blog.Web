@@ -12,7 +12,7 @@
       <Label>标签</Label>
       <Input v-model="form.tags" />
     </div>
-    <div class="h-96 w-full border py-3" ref="editor"></div>
+    <Monaco class="h-96 w-full border py-3"></Monaco>
     <Button @click="submit">保存</Button>
   </Card>
 </template>
@@ -22,10 +22,8 @@ import Card from "@/components/Card.vue";
 import Input from "@/components/Input.vue";
 import Label from "@/components/Label.vue";
 import Button from "@/components/Button.vue";
-import { reactive, ref, toRaw } from "@vue/reactivity";
-import { onMounted } from "@vue/runtime-core";
-import * as monaco from "monaco-editor";
-import "@/monaco-worker";
+import Monaco from "@/components/Monaco.vue";
+import { reactive, toRaw } from "@vue/reactivity";
 
 const form = reactive({
   name: "111",
@@ -36,21 +34,4 @@ const form = reactive({
 const submit = () => {
   console.log(toRaw(form));
 };
-
-const editor = ref<HTMLDivElement>();
-
-onMounted(() => {
-  if (editor.value) {
-    monaco.editor.create(editor.value, {
-      value: "# Hello, world!",
-      language: "markdown",
-      minimap: {
-        enabled: false,
-      },
-      lineNumbers: "off",
-      smoothScrolling: true,
-      automaticLayout: true
-    });
-  }
-});
 </script>
