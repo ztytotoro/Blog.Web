@@ -1,18 +1,15 @@
 <template>
-<div>
-    <span>{{post.title}}</span>
-</div>
+    <div class="shadow h-20 p-2">
+        <span>{{ post.title }}</span>
+    </div>
 </template>
 
 <script lang="ts" setup>
-import { defineProps } from "vue";
+import { defineProps, reactive } from "vue";
 
-defineProps<{
+const props = defineProps<{
     post: Post
-}>({
-    post: {
-        type: Object,
-        default: null
-    }
-})
+}>()
+
+const post = reactive(props.post)
 </script>

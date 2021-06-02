@@ -1,6 +1,6 @@
 <template>
     <span
-        class="text-sm bg-gray-600 text-white px-1 w-min h-7 leading-7 rounded cursor-default flex items-center"
+        class="text-sm bg-gray-600 text-white px-1 h-7 leading-7 rounded cursor-default flex items-center"
     >
         <slot></slot>
         <XIcon
@@ -14,7 +14,7 @@
 <script lang="ts" setup>
 //@ts-ignore
 import { XIcon } from '@heroicons/vue/solid'
-import { defineEmit, defineProps } from '@vue/runtime-core';
+import { defineEmit, defineProps } from 'vue';
 
 defineProps({
     closeIcon: {

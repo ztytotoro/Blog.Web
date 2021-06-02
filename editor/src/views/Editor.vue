@@ -17,7 +17,8 @@
             <TagInput v-model="form.tags" />
         </div>
         <Monaco class="h-96 w-full border py-3" v-model="form.content"></Monaco>
-        <Button @click="submit">保存</Button>
+        <Button :primary="true" @click="submit">保存</Button>
+        <Button class="ml-3" @click="cancel">取消</Button>
     </Card>
 </template>
 
@@ -29,8 +30,10 @@ import Button from "@/components/Button.vue";
 import Monaco from "@/components/Monaco.vue";
 import TagInput from "@/components/TagInput.vue";
 import { reactive, toRaw } from "vue";
+import { useRouter } from "vue-router";
 
 const form = reactive<Post>({
+    id: '',
     title: "Hello, world",
     name: "hello",
     author: "Yarn",
@@ -43,4 +46,8 @@ const form = reactive<Post>({
 const submit = () => {
     console.log(toRaw(form));
 };
+
+const router = useRouter();
+
+const cancel = () => router.replace('/')
 </script>
