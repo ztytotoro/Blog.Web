@@ -8,7 +8,6 @@
         <span class="h-10 leading-10 px-2">123</span>
         <span class="h-10 leading-10 px-2">123</span>
         <span class="h-10 leading-10 px-2">123</span>
-        <Tag @close="onClose" closeIcon>123131</Tag>
     </div>
 </template>
 

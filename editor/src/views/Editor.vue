@@ -9,6 +9,10 @@
             <Input v-model="form.title" />
         </div>
         <div>
+            <Label>作者</Label>
+            <Input v-model="form.author" />
+        </div>
+        <div>
             <Label>标签</Label>
             <TagInput v-model="form.tags" />
         </div>
