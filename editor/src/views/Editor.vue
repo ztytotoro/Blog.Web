@@ -31,12 +31,13 @@ import TagInput from "@/components/TagInput.vue";
 import { reactive, toRaw } from "vue";
 
 const form = reactive<Post>({
-    name: "",
-    title: "",
-    author: "",
-    tags: ["123"],
-    lastUpdate: "",
-    content: "",
+    title: "Hello, world",
+    name: "hello",
+    author: "Yarn",
+    tags: ["测试", "test"],
+    createTime: new Date(),
+    lastUpdate: new Date(),
+    content: "# Hello, world!"
 });
 
 const submit = () => {

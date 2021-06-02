@@ -5,6 +5,7 @@ interface Post {
   title: string;
   author: string;
   tags: string[];
-  lastUpdate: string;
+  createTime: Date;
+  lastUpdate: Date;
   content: string;
 }
