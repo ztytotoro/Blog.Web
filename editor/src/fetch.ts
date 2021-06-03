@@ -1,6 +1,6 @@
-import { ref } from "vue";
+import { ref } from 'vue';
 
-const url = "http://localhost:8060/api/post";
+const url = 'http://localhost:8060/api/post';
 
 async function getPosts() {
   const res = await fetch(url);
@@ -15,6 +15,8 @@ export function usePosts() {
     getPosts().then((data) => (posts.value = data));
   };
 
+  refresh();
+
   return {
     posts,
     refresh,
@@ -23,15 +25,15 @@ export function usePosts() {
 
 export async function addPost(post: Post) {
   const res = await fetch(url, {
-    method: "POST",
-    mode: "cors",
+    method: 'POST',
+    mode: 'cors',
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
       // 'Content-Type': 'application/x-www-form-urlencoded',
     },
     body: JSON.stringify(post),
   });
-  if(!res.ok) {
-    throw new Error("Failed");
+  if (!res.ok) {
+    throw new Error('Failed');
   }
 }

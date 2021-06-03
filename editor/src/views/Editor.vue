@@ -31,6 +31,7 @@ import Monaco from "@/components/Monaco.vue";
 import TagInput from "@/components/TagInput.vue";
 import { reactive, toRaw } from "vue";
 import { useRouter } from "vue-router";
+import { addPost, usePosts } from "../fetch";
 
 const form = reactive<Post>({
     id: '',
@@ -44,7 +45,7 @@ const form = reactive<Post>({
 });
 
 const submit = () => {
-    console.log(toRaw(form));
+    addPost(toRaw(form)).then(() => usePosts().refresh());
 };
 
 const router = useRouter();
