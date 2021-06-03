@@ -39,7 +39,7 @@ const form = reactive<Post>({
     author: "Yarn",
     tags: ["测试", "test"],
     createTime: new Date(),
-    lastUpdate: new Date(),
+    lastUpdateTime: new Date(),
     content: "# Hello, world!"
 });
 

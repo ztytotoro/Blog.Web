@@ -20,3 +20,18 @@ export function usePosts() {
     refresh,
   };
 }
+
+export async function addPost(post: Post) {
+  const res = await fetch(url, {
+    method: "POST",
+    mode: "cors",
+    headers: {
+      "Content-Type": "application/json",
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: JSON.stringify(post),
+  });
+  if(!res.ok) {
+    throw new Error("Failed");
+  }
+}

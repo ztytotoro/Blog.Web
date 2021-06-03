@@ -7,6 +7,6 @@ interface Post {
   author: string;
   tags: string[];
   createTime: Date;
-  lastUpdate: Date;
+  lastUpdateTime: Date;
   content: string;
 }
