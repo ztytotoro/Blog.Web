@@ -36,4 +36,5 @@ export async function addPost(post: Post) {
   if (!res.ok) {
     throw new Error('Failed');
   }
+  return await res.json() as Post;
 }

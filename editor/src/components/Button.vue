@@ -12,7 +12,7 @@ import { defineProps } from "vue";
 
 defineProps({
     primary: {
-        type: String,
+        type: Boolean,
         default: false
     }
 })

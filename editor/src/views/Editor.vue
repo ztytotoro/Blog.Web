@@ -30,22 +30,20 @@ import Button from "@/components/Button.vue";
 import Monaco from "@/components/Monaco.vue";
 import TagInput from "@/components/TagInput.vue";
 import { reactive, toRaw } from "vue";
-import { useRouter } from "vue-router";
-import { addPost, usePosts } from "../fetch";
+import { useRoute, useRouter } from "vue-router";
+import { addPost } from "../fetch";
+import { injectPost } from "../postStore";
 
-const form = reactive<Post>({
-    id: '',
-    title: "Hello, world",
-    name: "hello",
-    author: "Yarn",
-    tags: ["测试", "test"],
-    createTime: new Date(),
-    lastUpdateTime: new Date(),
-    content: "# Hello, world!"
-});
+const manager = injectPost()
+
+const route = useRoute();
+
+const post = route.params.postName ? manager.getByName(route.params.postName as string) : {} as Post
+
+const form = reactive(post);
 
 const submit = () => {
-    addPost(toRaw(form)).then(() => usePosts().refresh());
+    addPost(toRaw(form)).then(() => manager.refresh()).then(cancel);
 };
 
 const router = useRouter();

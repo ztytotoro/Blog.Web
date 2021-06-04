@@ -1,5 +1,5 @@
 <template>
-    <div class="shadow h-20 p-2">
+    <div class="shadow bg-white h-20 p-2">
         <span>{{ post.title }}</span>
     </div>
 </template>

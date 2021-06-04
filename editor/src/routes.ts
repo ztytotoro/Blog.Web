@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 const routes = [
   { path: '/', component: () => import('@/views/Posts.vue') },
-  { path: '/editor', component: () => import('@/views/Editor.vue') },
+  { path: '/editor', name: 'editor', component: () => import('@/views/Editor.vue') },
 ];
 
 export const router = createRouter({
